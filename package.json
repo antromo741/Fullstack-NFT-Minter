@@ -1,0 +1,14 @@
+{
+  "name": "fullstack-nft-minter",
+  "version": "1.0.0",
+  "description": "Creating a way to mint NFTs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Senku741",
+  "license": "ISC",
+  "devDependencies": {
+    "hardhat": "^2.6.0"
+  }
+}
