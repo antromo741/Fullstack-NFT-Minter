@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import NavBarMint from "./NavBarMint.js"
 
 const Minter = (props) => {
 
@@ -35,10 +36,7 @@ const Minter = (props) => {
             </button>
 
             <br></br>
-            <h1 id="title">🧙‍♂️ Alchemy NFT Minter</h1>
-            <p>
-                Simply add your asset's link, name, and description, then press "Mint."
-            </p>
+            <NavBarMint />
             <form>
                 <h2>🖼 Link to asset: </h2>
                 <input
