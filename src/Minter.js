@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import NavBarMint from "./NavBarMint.js"
-import { connectWallet } from "./utils/interact.js";
+import { connectWallet, getCurrentWalletConnected  } from "./utils/interact.js";
 
 const Minter = (props) => {
 
