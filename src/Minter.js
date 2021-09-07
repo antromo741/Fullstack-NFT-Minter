@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import NavBarMint from "./NavBarMint.js"
-import { connectWallet, getCurrentWalletConnected  } from "./utils/interact.js";
+import { connectWallet, getCurrentWalletConnected, mintNFT } from "./utils/interact.js";
 
 const Minter = (props) => {
 
@@ -50,8 +50,9 @@ const Minter = (props) => {
         setWallet(walletResponse.address);
     };
 
-    const onMintPressed = async () => { //TODO: implement
-
+    const onMintPressed = async () => {
+        const { status } = await mintNFT(url, name, description);
+        setStatus(status);
     };
 
     return (
